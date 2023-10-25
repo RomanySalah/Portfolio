@@ -1,0 +1,189 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow: hidden;
+}
+
+/* loading screen */
+#spinner {
+    display: flex;
+    background-color: rgb(10, 15, 16);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999999999;
+}
+
+/* home section */
+.khlfya {
+    background-color: black;
+}
+
+.size {
+    font-family: 'Noto Serif', serif;
+
+}
+
+#home {
+
+    background: linear-gradient(to right, #141e30, #243b55);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.underlink li a:hover {
+    border-bottom: solid 2px #fff;
+}
+
+/* .text1 .caption1{
+    color: rgb(0, 250, 221);
+} */
+.text1 .caption2 {
+    font-size: 50px;
+    font-weight: 500;
+    font-family: 'Noto Serif', serif;
+    /*   color: rgb(0, 250, 221); */
+
+}
+
+.text1 .icons i {
+    border: solid rgb(97, 85, 85) 2px;
+    border-radius: 50%;
+    padding: 10px;
+    text-decoration: none;
+    transition-duration: 0.5s;
+    color: white;
+}
+
+.text1 .icons i:hover {
+    background-color: rgb(244, 220, 85);
+    border-color: slategrey;
+    color: black;
+
+}
+
+/* about section */
+#about {
+    background-color: #DDEBF7;
+
+}
+
+.adress .abalites-color {
+    color: rgb(0, 250, 221);
+}
+
+.adress hr {
+    width: 100px;
+    margin: auto;
+    background-color: black;
+    height: 3px;
+    border: none;
+}
+
+.about-text {
+    font-family: 'Noto Serif', serif;
+    line-height: 1.8;
+}
+
+.text-about {
+    font-family: 'Noto Serif', serif;
+    color: rgb(244, 208, 6);
+}
+
+.b-adress {
+    color: rgb(0, 250, 221);
+}
+
+/* skills section */
+
+.skill-border {
+    border: solid 2px rgba(0, 0, 0, 0);
+    background-color: rgb(149, 145, 154);
+    border-radius: 5px;
+    transition: 0.5s;
+
+}
+
+.skill-border:hover {
+    transform: scale(1.05);
+
+}
+
+/* portfolio section */
+#portfolio {
+
+    background-color:  #DDEBF7;
+}
+
+#portfolio .row .item img {
+    width: 100%;
+}
+
+#portfolio .row .item {
+    text-align: center;
+}
+
+#portfolio .row .item .overlay {
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    color: #fff;
+}
+
+/* contact section */
+
+#footer {
+    background-color: #222;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.loader {
+    width: 64px;
+    height: 64px;
+    position: relative;
+    background-image:
+        linear-gradient(#FFF 16px, transparent 0),
+        linear-gradient(#FF3D00 16px, transparent 0),
+        linear-gradient(#FF3D00 16px, transparent 0),
+        linear-gradient(#FFF 16px, transparent 0);
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    background-position: left top, left bottom, right top, right bottom;
+    animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        width: 64px;
+        height: 64px;
+        transform: rotate(0deg)
+    }
+
+    50% {
+        width: 30px;
+        height: 30px;
+        transform: rotate(180deg)
+    }
+
+    100% {
+        width: 64px;
+        height: 64px;
+        transform: rotate(360deg)
+    }
+}
+
+#btnUp {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    z-index: 999999999999999999999;
+}
